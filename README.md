@@ -1,39 +1,57 @@
-# 🎮 XO Game (Tic-Tac-Toe) in Assembly Language
+# 🎮 XO Game - Assembly Language Project
 
-<div align="center">
-
-![Assembly](https://img.shields.io/badge/Assembly-8086-red)
-![EMU8086](https://img.shields.io/badge/EMU8086-Compatible-green)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
-**A complete Tic-Tac-Toe game implemented in x86 Assembly Language**
-
-</div>
-
-## 📖 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [How to Play](#how-to-play)
-- [Technical Details](#technical-details)
-- [Team Members](#team-members)
-- [Screenshots](#screenshots)
-- [License](#license)
-
-## 🎯 Overview
-
-This project is a fully functional Tic-Tac-Toe (XO) game developed in x86 Assembly Language using EMU8086 emulator. The game features two players (X and O) taking turns on a 3x3 grid, with automatic win detection and tie game handling.
+## 📋 Project Overview
+A complete Tic-Tac-Toe (XO) game implemented in x86 Assembly Language using EMU8086 emulator. Two players take turns placing X and O on a 3x3 grid, with automatic win detection and game management.
 
 ## ✨ Features
+- **Two-player gameplay** (X vs O)
+- **Smart win detection** - checks all 8 winning combinations
+- **Tie game recognition** - detects when board is full
+- **Input validation** - prevents invalid moves
+- **Clean text interface** - easy to use and understand
 
-- ✅ **Complete Game Logic**: Full Tic-Tac-Toe rules implementation
-- ✅ **Two Player Mode**: Alternating turns between X and O
-- ✅ **Smart Win Detection**: Checks all 8 possible winning combinations
-- ✅ **Tie Game Detection**: Recognizes when the board is full
-- ✅ **Input Validation**: Prevents invalid moves and occupied cell selection
-- ✅ **Clean Interface**: Text-based user interface with clear instructions
-- ✅ **Error Handling**: Comprehensive input validation and error messages
+## 🎯 How to Play
+1. Run the program in EMU8086
+2. Players alternate turns entering numbers 1-9
+3. Select empty cells to place your symbol (X or O)
+4. First player to get 3 in a row (any direction) wins!
+5. Game ends when someone wins or all cells are filled
 
 ## 🏗️ Project Structure
+The project is divided into three main modules:
+
+### 1. Board Management
+- Manages game board and player data
+- Handles player switching (X ↔ O)
+- Updates board after each move
+
+### 2. Win Detection  
+- Checks all possible winning combinations
+- Detects horizontal, vertical, and diagonal wins
+- Identifies tie games
+
+### 3. Main Controller
+- Manages game flow and user interface
+- Handles player input and validation
+- Displays game messages and results
+
+## 🔧 Technical Details
+- **Language**: x86 Assembly
+- **Platform**: EMU8086 Emulator
+- **Architecture**: Modular design with separate components
+- **Features**: Full error handling and input validation
+
+## 🚀 Getting Started
+1. Install EMU8086 emulator
+2. Open the main.asm file
+3. Compile and run (F5)
+4. Follow on-screen instructions to play
+
+## 👥 Team
+- **Board Manager**: [louay mohamed ]
+- **Win Checker**: [ sohila ehab ] 
+- **Main Controller**: [lama diaa]
+
+---
+
+*Experience classic gaming at the lowest level of programming!*
